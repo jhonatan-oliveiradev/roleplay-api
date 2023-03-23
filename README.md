@@ -1,0 +1,1 @@
+Roleplay é um sistema de gerenciamento de mesas de RPG (Role Playing Gaming). Um mestré é responsável por cadastrar a mesa e definir as regras do jogo. Jogadores interessados podem procurar uma mesa e solicitar se juntar a ela, agurdando aprovação do mestre para a sua solicitação.
