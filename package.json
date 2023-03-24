@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@adonisjs/assembler": "^5.9.5",
+    "@faker-js/faker": "^7.6.0",
     "@types/supertest": "^2.0.12",
     "adonis-preset-ts": "^2.1.0",
     "eslint": "^8.36.0",
