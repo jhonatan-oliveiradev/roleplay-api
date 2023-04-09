@@ -9,4 +9,9 @@ export default class SessionsController {
 
     return response.created({ user: auth.user, token })
   }
+
+  public async destroy({ response, auth }: HttpContextContract) {
+    auth.logout()
+    return response.ok({})
+  }
 }
