@@ -76,18 +76,12 @@ test.group('Session', (group) => {
 
     const apiToken = body.token
 
-    const tokenBeforeSignOut = await Database.query().select('*').from('api_tokens')
-    console.log({ tokenBeforeSignOut })
-
     await supertest(BASE_URL)
       .delete('/sessions')
       .set('Authorization', `Bearer ${apiToken.token}`)
       .expect(200)
 
     const token = await Database.query().select('*').from('api_tokens')
-
-    const tokenAfterSignOut = await Database.query().select('*').from('api_tokens')
-    console.log({ tokenAfterSignOut })
 
     assert.isEmpty(token)
   })
